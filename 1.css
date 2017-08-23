@@ -1,0 +1,430 @@
+*{margin: 0; padding: 0;}
+
+/* Css header - menu*/
+
+.menu.bienhinh {
+    background: red;
+    height: 60px;
+}
+
+.menu.bienhinh .navbar-toggleable-lg {
+    height: 99%;
+}
+
+.menu.bienhinh a.navbar-brand {
+    height: 58px;
+    margin-top: 1px;
+}
+
+.menu.bienhinh nav .container {
+    height: 100%;
+}
+
+header .menu.bienhinh ul li a.nav-link {
+    font-size: 20px;
+    margin-top: -15px;
+}
+
+.menu.bienhinh .navbar.navbar-light {
+    height: 60px;
+    margin: 0px;
+    padding: 0px;
+}
+
+header .menu{
+    position: fixed;
+    top: 0%;
+    z-index: 3;
+    width: 100%;
+    transition: 3s;
+}
+
+header .menu ul li a.nav-link {
+    padding: 7px 25px;
+    color: rgba(255, 255, 255, 0.87)!important;
+    border-bottom: 1px solid transparent;
+    transition: 0.4s;
+}
+
+header .menu ul li a.nav-link:hover {
+    color: white!important;
+    border-bottom: 1px solid white;
+}
+
+.menu ul.nav.navbar-nav.float-md-right {
+    margin-top: 25px;
+    font-size: 21px;
+    font-family: 'Cabin', sans-serif;
+}
+
+header .menu a img {
+    width: 100%;
+    height: 100%;
+}
+
+header .menu a.navbar-brand {
+    width: 200px;
+    height: 90px;
+    margin: 0px;
+    padding: 0px;
+}
+
+header .menu nav.navbar.navbar-light {
+    background: #E91E63;
+}
+
+
+/* Css banner */
+
+.banner .container{
+    width: 1902px;
+}
+
+section.banner {
+    position: relative;
+    margin-top: 110px;
+}
+
+section.banner .dot {
+    position: absolute;
+    bottom: -3%;
+    left: 50%;
+    width: auto;
+    z-index: 1;
+}
+
+section.banner .dot ul li {
+    list-style: none;
+    background: rgba(128, 128, 128, 0.21);
+    display: inline-block;
+    height: 15px;
+    text-indent: -9973px;
+    width: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: 0.4s;
+}
+
+section.banner .dot ul li:hover {
+    background: grey;
+    border: 1px solid grey;
+}
+
+section.banner .dot ul li.active {
+    background: grey;
+    border: 1px solid grey;
+}
+
+section.banner .slides ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+section.banner .slides ul {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.banner .slides ul li {
+    opacity: 0;
+    visibility: hidden;
+    float: left;
+    list-style: none;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner .slides ul li.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.banner .slides{
+    perspective: 600px;
+}
+
+/* Css hieu ung slide */
+.disappear{
+    animation: disappear 0.8s forwards;
+}
+
+@-webkit-keyframes disappear{
+    0%{
+        opacity: 1;
+        visibility: visible;
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.appear{
+    animation: appear 0.8s forwards;
+}
+
+@-webkit-keyframes appear{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.disappear2{
+    animation: disappear2 0.8s forwards;
+}
+
+@-webkit-keyframes disappear2{
+    0%{
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0);
+    }
+}
+
+.appear2{
+    animation: appear2 0.8s forwards;
+}
+
+@-webkit-keyframes appear2{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+}
+
+.disappear3{
+    animation: disappear3 0.8s forwards;
+    transform-origin: 0% 50%; 
+}
+
+@-webkit-keyframes disappear3{
+    0%{
+        opacity: 1;
+        visibility: visible;
+        transform: rotate(0deg) translateZ(0px);
+    }
+    100%{
+        opacity: 0;
+        visibility: hidden;
+        transform: rotate(180deg) translateZ(-1000px);
+    }
+}
+
+.appear3{
+    animation: appear3 0.8s forwards;
+}
+
+@-webkit-keyframes appear3{
+    0%{
+        opacity: 0;
+        visibility: hidden;
+        transform: rotate(180deg) translateZ(-1000px);
+    }
+    100%{
+        opacity: 1;
+        visibility: visible;
+        transform: rotate(0deg) translateZ(0px);
+    }
+}
+
+/* Css categories */
+
+.main .btn.btn-primary {
+    background: url("images/background-btn.png") center center;
+    background-size: 100%;
+    border: none;
+} 
+
+.categories .content h2 {
+    font-size: 50px;
+    color: rgb(254, 69, 132);
+}
+
+.categories .content {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.categories .main ul {
+    margin: 0px;
+    padding: 20px 0px;
+}
+
+.categories .main ul li {
+    display: inline;
+    margin: 0px 2%;
+}
+
+.options {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.14);
+}
+
+section.categories {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    overflow: hidden;
+
+}
+
+/* Css product */
+
+.categories .product .info {text-transform: capitalize;font-family: 'Cabin', sans-serif;}
+
+.categories .btn.btn-primary.more {
+    margin: auto;
+}
+
+.categories .product .info .code {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 50%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    height: 30px;
+    padding-top: 3px;
+    transition: 0.4s;
+    transform: translateY(30px);
+    opacity: 0;
+}
+
+.categories .product .info .price {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 50%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    height: 30px;
+    padding-top: 3px;
+    transition: 0.6s;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.categories .main .product .image {
+    width: 100%;
+    height: 100%;
+}
+
+.categories .main .product .image
+ img {
+    width: 100%;
+    height: 100%;
+    transition: 2s;
+}
+
+.categories .main .product {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    transition: 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid rgba(128, 128, 128, 0.17);
+}
+
+.categories .main .product:hover .image img {
+    transform: scale(1.2);
+}
+
+.categories .main .product:hover {
+    box-shadow: 0 0 5px #FE4584;
+
+}
+
+.categories .main .product:hover .info .code {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.categories .main .product:hover .info .price {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Css contact */
+*{}
+
+.contact .btn.btn-primary {background: grey;margin: 2px 10px;border: none;border-radius: 0;}
+
+.btn.btn-primary.active-contact {
+    background: black;
+}
+
+.contact .btn.btn-primary:hover {
+    background: black;
+}
+
+.contact .btn-options.text-xs-center {
+    position: absolute;
+    top: 0%;
+    left: 45%;
+    z-index: 5;
+    margin: auto;
+}
+
+.contact .map {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.contact .infomation {
+    background: #2C3E50;
+    color: white;
+    padding: 20px 0px;
+    height: 350px;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+section.contact.mt-3 {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+/* Css footer */
+footer.footer {
+    width: 100%;
+    height: 30px;
+    clear: left;
+    margin-top: 436px;
+    color: white;
+    background: rgba(0, 0, 0, 0.9);
+}
